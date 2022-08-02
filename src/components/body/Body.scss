@@ -1,0 +1,18 @@
+.Cxc__Body {
+    max-width: 680px;
+    background-color: #E9C99D;
+    margin: 0 auto;
+    padding: 44px;
+    .Cxc__form__inner {
+        margin: 0 auto;
+        max-width: 630px;
+        display: flex;
+        .Cxc__inserting__field {
+            width: 85%;
+            height: 30px;
+        }
+        .Cxc__submit {
+            width: 14%;
+        }
+    }
+}
