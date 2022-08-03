@@ -3,16 +3,45 @@
     background-color: #E9C99D;
     margin: 0 auto;
     padding: 44px;
-    .Cxc__form__inner {
-        margin: 0 auto;
-        max-width: 630px;
-        display: flex;
-        .Cxc__inserting__field {
-            width: 85%;
-            height: 30px;
+    .Cxc__form {
+        .Cxc__form__inner {
+            margin: 0 auto;
+            max-width: 630px;
+            display: flex;
+            .Cxc__inserting__field {
+                width: 85%;
+                height: 30px;
+            }
+            .Cxc__submit {
+                width: 14%;
+            }
         }
-        .Cxc__submit {
-            width: 14%;
+    }
+    .Cxc__todo__data {
+        margin-top: 40px;
+        .Cxc__data__list {
+            margin: 0 auto;
+            padding: 0;
+            list-style-type: disc;
+            max-width: 630px;
+            li {  
+                display: flex;
+                border-radius: 4px;
+                justify-content: space-between;
+                background-color: #fff;
+                padding: 20px 13px;
+                margin: 5px 0;
+                .Cxc__buttons {
+                    display: flex;
+                    gap: 10px;
+                    .Cxc__remove__task {
+                        background-color: #FF0000;
+                    }
+                    .Cxc__compelete__task {
+                        background-color: #FF0000;
+                    }
+                }
+            }
         }
     }
 }

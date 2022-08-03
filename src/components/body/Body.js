@@ -15,9 +15,11 @@ function Body() {
         <div className="Cxc__todo__data">
             <ul className="Cxc__data__list">
                 <li> 
-                  <span ClassName="Cxc__task__detail">Export CoinQuora Post && Import in CoinEdition.</span>
-                  <span className="Cxc__remove__task"> - </span>
-                  <span ClassName="Cxc__compelete__task">Status</span>
+                  <span className="Cxc__task__detail">Export CoinQuora Post && Import in CoinEdition.</span>
+                  <div className="Cxc__buttons">
+                    <span className="Cxc__remove__task"> - </span>
+                    <span className="Cxc__compelete__task"> Status </span>
+                  </div>
                 </li> 
             </ul>
         </div>
