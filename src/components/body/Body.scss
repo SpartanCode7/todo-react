@@ -1,6 +1,6 @@
 .Cxc__Body {
     max-width: 680px;
-    background-color: #E9C99D;
+    background-color: #0E9F87;
     margin: 0 auto;
     padding: 44px;
     .Cxc__form {
@@ -10,15 +10,23 @@
             display: flex;
             .Cxc__inserting__field {
                 width: 85%;
-                height: 30px;
+                height: 32px;
+                border: none;
+                padding-left: 10px;
             }
             .Cxc__submit {
                 width: 14%;
+                background-color: #E9C99D;
+                border: none;
+                height: 34px;
+                margin-top: 0px;
+                font-weight: bold;
+                letter-spacing: 1px;
             }
         }
     }
     .Cxc__todo__data {
-        margin-top: 40px;
+        margin-top: 20px;
         .Cxc__data__list {
             margin: 0 auto;
             padding: 0;
@@ -29,19 +37,34 @@
                 border-radius: 4px;
                 justify-content: space-between;
                 background-color: #fff;
-                padding: 20px 13px;
+                padding: 9px 13px;
                 margin: 5px 0;
                 .Cxc__buttons {
                     display: flex;
                     gap: 10px;
+                    .Cxc__box {
+                        height: 25px;
+                        text-align: center;
+                        color: #fff;
+                    }
                     .Cxc__remove__task {
                         background-color: #FF0000;
+                        width: 25px;
+                        font-weight: bold;
+                        border-radius: 100%;
+                        color: #fff;
                     }
                     .Cxc__compelete__task {
-                        background-color: #FF0000;
+                        background-color: #0E9F87;
+                        padding: 0 10px;
                     }
                 }
             }
         }
     }
+}
+
+.incr {
+    display: flex;
+    justify-content: center;
 }

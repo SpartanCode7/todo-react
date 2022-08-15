@@ -3,10 +3,10 @@ import React from 'react';
 import Header from './components/header/Header';
 import Body from './components/body/Body';
 
-function App() {
+function App(props) {
   return (
     <div className="Cxc__App">
-      <Header />
+      <Header val="Header" />
       <Body />
     </div>
   );

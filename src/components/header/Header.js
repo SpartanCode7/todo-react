@@ -1,9 +1,11 @@
 import React from 'react';
 import './Header.scss';
 
-function Header() {
+function Header(props) {
   return (
-    <div className="Header">Header</div>
+    <div className="Header">
+        <h1>{props.val}</h1>
+    </div>
   )
 }
 
