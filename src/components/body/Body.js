@@ -4,45 +4,37 @@ import './Body.scss';
 
 
 function Body() {
-  const [todo, setTodo] = useState('');
-
-  const handleChange = event => {
-    setTodo(event.target.value);
-  };
-
-  const handleClick = event => {
-    event.preventDefault();
+  
+  const [todos, setTodos] = useState(['  ','Cx']);
+  const [input, setInput] = useState('');
 
     // 👇️ value of input field
-    console.log('handleClick 👉️', todo);
-  };
+  console.log('handleClick 👉️', input);
+
+  const addTodo = (event) => {
+      event.preventDefault();
+      setTodos([...todos, input]);
+      setInput('');
+  }
 
   return (
     <div className="Cxc__Body">
         <div className="Cxc__form">
             <div className="Cxc__form__inner">
-                <input type="text" name="todo" placeholder="Write Todo..." onChange={handleChange} className="Cxc__inserting__field" value={todo} />
-
-         
-       
-                    {/* onChange={handleChange} */}
-                    {/* value={todo}
-                    autoComplete="off" */}
-        
-
-
-                <button onClick={handleClick}>Click</button>
+                <input type="text" name="todo" placeholder="Write Todo..." onChange={event => setInput(event.target.value)} className="Cxc__inserting__field" value={input} />
+                <button disabled={!input} type="button" onClick={addTodo}>Click</button>
             </div>
         </div>
         <div className="Cxc__todo__data">
             <ul className="Cxc__data__list">
-                <li>
-                  <span className="Cxc__task__detail">{todo}</span>
-                  <div className="Cxc__buttons">
-                    <span className="Cxc__remove__task Cxc__box"> &#8722; </span>
-                    <span className="Cxc__compelete__task Cxc__box"> Status </span>
-                  </div>
-                </li>
+                  {todos.map(todos => (
+                      <li className="Cxc__task__detail">{todos} 
+                      <div className="Cxc__buttons">
+                        <span className="Cxc__remove__task Cxc__box"> &#8722; </span>
+                        <span className="Cxc__compelete__task Cxc__box"> Status </span>
+                      </div>
+                    </li>
+                  ))}
             </ul>
         </div>
     </div>
